@@ -11,8 +11,12 @@ DeepSeek Harness (DSH) 技能管理器（host + client 一体包）。
 ## 安装
 
 ```bash
-dsh plugin --profile web add github:<your-name>/dsh-skill-manager
+dsh plugin --profile web add github:tuogusa/dsh-skill-manager
 ```
+
+**兼容 Profile**：`web`（DSH Web GUI）。
+
+
 
 然后按 `dsh` 引导添加 `pnpm-workspace.yaml` 的 allowBuilds 条目，重启 DSH 并 `Ctrl+Shift+R` 刷新浏览器。
 
