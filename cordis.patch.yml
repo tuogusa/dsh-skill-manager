@@ -1,0 +1,4 @@
+# dsh-skill-manager bundle patch：dsh plugin add 安装后自动挂载此 loader 行。
+- insert:
+    - id: skill-manager
+      name: 'dsh-skill-manager'

@@ -19,10 +19,14 @@
         "@deepseek-ai/dsh-client-ui-settings"
       ],
       "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
     }
   },
   "files": [
-    "lib"
+    "lib",
+    "cordis.patch.yml"
   ],
   "peerDependencies": {
     "react": "^18.2.0"
