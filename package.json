@@ -1,8 +1,11 @@
 {
   "name": "dsh-skill-manager",
   "version": "0.2.0",
-  "description": "技能管理器：设置→技能，扫描用户技能根目录、列出/删除技能（host + client 一体包）",
+  "description": "技能管理器：设置→技能，扫描用户技能根目录、列出/删除/撤回技能（host + client 一体包）",
   "type": "module",
+  "scripts": {
+    "test": "node test/delete-undo.test.mjs"
+  },
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
