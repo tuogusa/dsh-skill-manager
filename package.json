@@ -1,7 +1,7 @@
 {
   "name": "dsh-skill-manager",
-  "version": "0.2.0",
-  "description": "技能管理器：设置→技能，扫描用户技能根目录、列出/删除/撤回/检查更新技能（host + client 一体包）",
+  "version": "0.3.0",
+  "description": "技能管理器：设置→技能，扫描用户技能根目录、列出/删除/撤回/检查更新技能，支持 GitHub/Gitee Release 更新（host + client 一体包）",
   "type": "module",
   "scripts": {
     "test": "node test/delete-undo.test.mjs && node test/update.test.mjs"

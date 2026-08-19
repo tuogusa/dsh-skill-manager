@@ -22,6 +22,18 @@ dsh plugin --profile web add github:tuogusa/dsh-skill-manager
 
 然后按 `dsh` 引导添加 `pnpm-workspace.yaml` 的 allowBuilds 条目，重启 DSH 并 `Ctrl+Shift+R` 刷新浏览器。
 
+## 更新
+
+```bash
+# 方式一：CLI 更新（推荐）
+dsh plugin --profile web update dsh-skill-manager
+
+# 方式二：重新从 GitHub 源安装/更新
+dsh plugin --profile web add github:tuogusa/dsh-skill-manager
+```
+
+> 说明：`dsh plugin` 是 pnpm 的前置转发器，`update` 会按当前依赖声明重新解析该包；通过 `github:tuogusa/dsh-skill-manager` 安装时，会更新到仓库默认分支的最新提交。本插件的“技能更新”功能更新的是用户技能（SKILL.md 中声明 `repository` 的 Release），不是插件自身；插件自身请用上面的 CLI 命令更新。
+
 ## 结构
 
 - `lib/index.js` — 主机侧：`/api/skill-manager/list`、`/api/skill-manager/delete`、`/api/skill-manager/trash`、`/api/skill-manager/undo`、`/api/skill-manager/purge`、`/api/skill-manager/check-update`、`/api/skill-manager/update`
